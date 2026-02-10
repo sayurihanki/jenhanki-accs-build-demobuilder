@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "code": {
+    "owner": "sayurihanki",
+    "repo": "jenhanki-accs-build-demobuilder",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/sayurihanki/jenhanki-accs-build-demobuilder"
+    }
+  },
+  "content": {
+    "source": {
+      "url": "https://content.da.live/sayurihanki/jenhanki-accs-build-demobuilder",
+      "type": "markup"
+    }
+  },
+  "folders": {
+    "/products/": "/products/default"
+  },
+  "cdn": {
+    "live": {
+      "host": "main--jenhanki-accs-build-demobuilder--sayurihanki.aem.live"
+    },
+    "preview": {
+      "host": "main--jenhanki-accs-build-demobuilder--sayurihanki.aem.page"
+    }
+  },
+  "headers": {},
+  "public": {
+    "default": {
+      "commerce-endpoint": "https://edge-sandbox-graph.adobe.io/api/126d48f0-c1fa-465f-afab-a05810e18ed2/graphql",
+      "commerce-assets-enabled": true,
+      "headers": {
+        "all": {
+          "Store": "default"
+        },
+        "cs": {
+          "Magento-Customer-Group": "",
+          "Magento-Store-Code": "default",
+          "Magento-Store-View-Code": "default",
+          "Magento-Website-Code": "base"
+        }
+      },
+      "analytics": {
+        "base-currency-code": "USD",
+        "environment": "Production",
+        "store-id": 1,
+        "store-name": "Main Website Store",
+        "store-url": "https://main--jenhanki-accs-build-demobuilder--sayurihanki.aem.live/",
+        "store-view-id": 1,
+        "store-view-name": "Default Store View",
+        "website-id": 1,
+        "website-name": "Main Website"
+      }
+    }
+  },
+  "robots": {
+    "txt": "User-agent: *\nAllow: /\nDisallow: /drafts/\nDisallow: /enrichment/\nDisallow: /tools/\nDisallow: /plugins/experimentation/\n\nSitemap: https://main--jenhanki-accs-build-demobuilder--sayurihanki.aem.live/sitemap-index.xml"
+  },
+  "sidekick": {
+    "project": "Demo Builder Project",
+    "plugins": [
+      {
+        "id": "cif",
+        "title": "Commerce",
+        "environments": [
+          "edit"
+        ],
+        "url": "https://main--jenhanki-accs-build-demobuilder--sayurihanki.aem.live/tools/picker/dist/index.html",
+        "isPalette": true,
+        "paletteRect": "top: 54px; left: 5px; bottom: 5px; width: 300px; height: calc(100% - 59px); border-radius: var(--hlx-sk-button-border-radius); overflow: hidden; resize: horizontal;"
+      },
+      {
+        "id": "personalisation",
+        "title": "Personalisation",
+        "environments": [
+          "edit"
+        ],
+        "url": "https://main--jenhanki-accs-build-demobuilder--sayurihanki.aem.live/tools/segments/dist/index.html",
+        "isPalette": true,
+        "paletteRect": "top: 54px; left: 5px; bottom: 5px; width: 300px; height: calc(100% - 59px); border-radius: var(--hlx-sk-button-border-radius); overflow: hidden; resize: horizontal;"
+      }
+    ]
+  }
+}

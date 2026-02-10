@@ -1,0 +1,64 @@
+{
+  "definitions": [
+    {
+      "title": "Section",
+      "id": "section",
+      "plugins": {
+        "da": {
+          "unsafeHTML": "<div></div>"
+        }
+      },
+      "filter": "section",
+      "model": "section"
+    }
+  ],
+  "models": [
+    {
+      "id": "section",
+      "fields": [
+        {
+          "component": "multiselect",
+          "name": "style",
+          "label": "Style",
+          "options": [
+            {
+              "name": "Highlight",
+              "value": "highlight"
+            },
+            {
+              "component": "reference",
+              "name": "background[src]",
+              "label": "Image"
+            },
+            {
+              "component": "richtext",
+              "name": "fancy",
+              "label": "Fancy"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "section",
+      "components": [
+        "accordion",
+        "cards",
+        "carousel",
+        "columns",
+        "fragment",
+        "hero",
+        "product-recommendations",
+        "quote",
+        "search",
+        "tabs",
+        "video",
+        "image",
+        "text",
+        "product-teaser"
+      ]
+    }
+  ]
+}

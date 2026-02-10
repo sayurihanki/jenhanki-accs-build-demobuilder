@@ -1,0 +1,7 @@
+mountpoints:
+  /:
+    url: https://content.da.live/sayurihanki/jenhanki-accs-build-demobuilder/
+    type: markup
+
+folders:
+  /products/: /products/default
